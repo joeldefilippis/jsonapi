@@ -1,0 +1,14 @@
+<h1>PAISES</h1>
+
+<select class="form-control" ng-model="codigo_region" ng-change="leer_paises()">
+  <option value="africa">Africa</option>
+  <option value="americas">americas</option>
+  <option value="asia">asia</option>
+  <option value="europe">europe</option>
+</select>
+
+<h2>resultado</h2>
+
+<div ng-repeat="pais in paises">
+  <h3> nombre: {{pais.name}} </h3>
+</div>

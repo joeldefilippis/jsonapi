@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="text/x-scss" href="scripts/index.scss">
+    <link rel="text/x-scss" href="scripts/components/collection/collection.scss">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="miProyectoAngularApp">
+
+
+    <!-- <div class="container">
+    <div ui-view></div>
+    </div> -->
+
+    <sidebar></sidebar>
+    <ui-view class="pusher site"></ui-view>
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/angular-ui-sortable/sortable.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="bower_components/angular-uuid4/angular-uuid4.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/pluralize/pluralize.js"></script>
+    <script src="bower_components/validate/validate.js"></script>
+    <script src="bower_components/parse/parse.min.js"></script>
+    <script src="bower_components/angular-jsonapi/dist/angular-jsonapi.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/personas.js"></script>
+        <script src="scripts/controllers/tareas.js"></script>
+        <script src="scripts/controllers/paises.js"></script>
+        <script src="scripts/controllers/menu.js"></script>
+
+        <script src="scripts/frame/frame.controller.js"></script>
+        <script src="scripts/request/all.controller.js"></script>
+        <script src="scripts/request/get.controller.js"></script>
+        <script src="scripts/request/request.controller.js"></script>
+
+        <script src="scripts/resources/jobs.factory.js"></script>
+        <script src="scripts/resources/laser-guns.factory.js"></script>
+        <script src="scripts/resources/locations.factory.js"></script>
+        <script src="scripts/resources/planets.factory.js"></script>
+        <script src="scripts/resources/power-armors.factory.js"></script>
+        <script src="scripts/resources/robot-models.factory.js"></script>
+        <script src="scripts/resources/robots.factory.js"></script>
+        <script src="scripts/resources/spaceship-models.factory.js"></script>
+        <script src="scripts/resources/spaceships.factory.js"></script>
+
+        <!-- <script src="scripts/sidebar/sidebar.directive.js"></script> -->
+
+        <!-- <script src="scripts/index.js"></script> -->
+        <script src="scripts/index.run.js"></script>
+        <script src="scripts/index.constants.js"></script>
+
+        <!-- <script src="scripts/components/attribute-field/attribute-field.directive.js"></script> -->
+
+        <script src="scripts/components/collection/collection.directive.js"></script>
+
+        <!-- <script src="scripts/components/error-message/error-list.directive.js"></script>
+        <script src="scripts/components/error-message/error-message.directive.js"></script> -->
+
+        <script src="scripts/components/object/object.directive.js"></script>
+        <script src="scripts/components/object/object-relationships.directive.js"></script>
+
+        <!-- <script src="scripts/components/promise-button/promise-button.directive.js"></script>
+        <script src="scripts/components/promise-button/promise-button.module.js"></script> -->
+
+        <!-- <script src="scripts/components/search/search-collection.filter.js"></script>
+        <script src="scripts/components/search/search-object.filter.js"></script>
+        <script src="scripts/components/search/search.directive.js"></script> -->
+
+        <script src="scripts/components/utils/bytes.filter.js"></script>
+        <!-- <script src="scripts/components/utils/semantic-ui.module.js"></script> -->
+        <script src="scripts/components/utils/to-title-case.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
